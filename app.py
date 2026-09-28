@@ -4,7 +4,7 @@ import os
 import random
 
 st.set_page_config(
-    page_title="Simulador LPIC-1 (102-500)",
+    page_title="Simulador LPIC-1 (101-500)",
     page_icon="🐧",
     layout="centered"
 )
@@ -12,7 +12,7 @@ st.set_page_config(
 # Carregamento seguro do arquivo JSON
 @st.cache_data
 def carregar_dados():
-    caminho = os.path.join(os.path.dirname(__file__), "questoes.json")
+    caminho = os.path.join(os.path.dirname(__file__), "questoes_101.json")
     if not os.path.exists(caminho):
         return []
     with open(caminho, "r", encoding="utf-8") as f:
@@ -20,10 +20,10 @@ def carregar_dados():
 
 questoes_originais = carregar_dados()
 
-st.title("🐧 Simulado LPIC-1 — Exame 102-500")
+st.title("🐧 Simulado LPIC-1 — Exame 101-500")
 
 if not questoes_originais:
-    st.error("Arquivo `questoes.json` não encontrado na mesma pasta de `app.py`.")
+    st.error("Arquivo `questoes_101.json` não encontrado na mesma pasta de `app.py`.")
     st.stop()
 
 # ==========================================
