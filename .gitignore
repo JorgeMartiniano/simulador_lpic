@@ -1,0 +1,10 @@
+﻿# Ignora o ambiente virtual
+venv/
+
+# Ignora pastas de cache do Python
+__pycache__/
+*.pyc
+
+# Ignora arquivos de sistema do Windows
+Thumbs.db
+.DS_Store
