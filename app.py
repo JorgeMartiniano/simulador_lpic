@@ -4,7 +4,7 @@ import os
 import random
 
 st.set_page_config(
-    page_title="Simulador LPIC-1 (101-500)",
+    page_title="Simulador LPIC-1 (102-500)",
     page_icon="🐧",
     layout="centered"
 )
@@ -20,7 +20,7 @@ def carregar_dados():
 
 questoes_originais = carregar_dados()
 
-st.title("🐧 Simulado LPIC-1 — Exame 101-500")
+st.title("🐧 Simulado LPIC-1 — Exame 102-500")
 
 if not questoes_originais:
     st.error("Arquivo `questoes.json` não encontrado na mesma pasta de `app.py`.")
